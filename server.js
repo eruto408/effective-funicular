@@ -1,4 +1,4 @@
-javascript
+
 import express from 'express';
 import cors from 'cors';
 
@@ -7,14 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.json({ 
-    message: 'WaafiPay Backend is LIVE! ✅',
-    status: 'Dhaqaale Loan API Working'
-  });
-});
-
-app.get('/health', (req, res) => {
-  res.json({ status: 'ok' });
+  res.json({ message: 'WaafiPay Backend is LIVE! ✅' });
 });
 
 const PORT = process.env.PORT || 10000;
